@@ -115,11 +115,11 @@ def stage_rollback():
 def main():
     check_env()
     MARKERS.mkdir(exist_ok=True)
-    print("\n Round 1 needs no setup.")
+    print("\nRound 1 is set up.")
     stage_round_2()
     stage_round_3()
     stage_rollback()
-    print("\n Round 4 needs no setup.")
+    print("\nRound 4 is set up.")
     stage_round_5()
     print("Each round has a card. Round 1's is session-04/round_1/CARD.md")
     print("\nReady.")
